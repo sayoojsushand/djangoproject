@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div style="margin: 100px 650px;">
+    <h1>{{ data.Name }}</h1>
+    <br>
+    {{ data.Description}}
+    <br>
+    {{ data.Category }}
+    <br>
+    {{ data.Price }}
+    <br>
+    <img src="{{ data.Photo.url }}" alt="" style="height: 200px; width: 200px;">
+</div>
+{% endblock content %}
+    

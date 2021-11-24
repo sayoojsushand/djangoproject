@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    {{ user.Name }}
+    <br><br>
+    <img src="{{ user.Photo.url }}" alt="" height="100" width="100">
+    <br>
+    <a href="{% url 'app10:update' %}">Update Profile</a>
+    <a href="{% url 'app10:logout' %}">Logout</a>
+{% endblock content %}
+    
